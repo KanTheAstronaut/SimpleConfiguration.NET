@@ -9,6 +9,9 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</RepositoryUrl>
+    <PackageTags>config, data, configuration, save, json</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

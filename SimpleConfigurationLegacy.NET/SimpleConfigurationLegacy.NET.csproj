@@ -8,6 +8,8 @@
     <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

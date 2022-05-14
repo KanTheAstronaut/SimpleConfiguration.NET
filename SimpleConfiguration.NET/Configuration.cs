@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -110,7 +109,7 @@ namespace SimpleConfiguration.NET
         {
             if (!Directory.Exists(LocalPath))
                 Directory.CreateDirectory(LocalPath);
-            File.WriteAllText(LocalFilePath, System.Text.Json.JsonSerializer.Serialize(Data));
+            File.WriteAllText(LocalFilePath, this.ToString());
             return this;
         }
 
@@ -202,13 +201,7 @@ namespace SimpleConfiguration.NET
         {
             if (!Directory.Exists(LocalPath))
                 Directory.CreateDirectory(LocalPath);
-            using (var stream = new MemoryStream())
-            {
-                await System.Text.Json.JsonSerializer.SerializeAsync(stream, Data);
-                stream.Position = 0;
-                using var reader = new StreamReader(stream);
-                await File.WriteAllTextAsync(LocalFilePath, await reader.ReadToEndAsync());
-            }
+            await File.WriteAllTextAsync(LocalFilePath, await this.ToStringAsync());
             return this;
         }
 
