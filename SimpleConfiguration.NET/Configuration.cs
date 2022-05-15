@@ -96,7 +96,7 @@ namespace SimpleConfiguration.NET
                 File.WriteAllText(LocalFilePath, System.Text.Json.JsonSerializer.Serialize(newData));
                 Data = newData;
             }
-            else
+            else if (File.Exists(LocalFilePath))
                 Data = System.Text.Json.JsonSerializer.Deserialize<T>(File.ReadAllBytes(LocalFilePath));
             return this;
         }
@@ -187,7 +187,7 @@ namespace SimpleConfiguration.NET
                     Data = newData;
                 }
             }
-            else
+            else if (File.Exists(LocalFilePath))
                 using (var stream = new MemoryStream(File.ReadAllBytes(LocalFilePath)))
                     Data = await System.Text.Json.JsonSerializer.DeserializeAsync<T>(stream);
             return this;

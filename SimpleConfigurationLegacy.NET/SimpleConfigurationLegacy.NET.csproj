@@ -10,6 +10,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</RepositoryUrl>
     <PackageProjectUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

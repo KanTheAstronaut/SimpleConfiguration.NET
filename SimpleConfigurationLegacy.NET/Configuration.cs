@@ -84,7 +84,7 @@ namespace SimpleConfigurationLegacy.NET
                 File.WriteAllText(LocalFilePath, System.Text.Json.JsonSerializer.Serialize(newData));
                 Data = newData;
             }
-            else
+            else if (File.Exists(LocalFilePath))
                 Data = System.Text.Json.JsonSerializer.Deserialize<T>(File.ReadAllBytes(LocalFilePath));
             return this;
         }

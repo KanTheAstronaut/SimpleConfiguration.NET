@@ -12,6 +12,7 @@
     <PackageProjectUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</PackageProjectUrl>
     <RepositoryUrl>https://github.com/KanTheAstronaut/SimpleConfiguration.NET</RepositoryUrl>
     <PackageTags>config, data, configuration, save, json</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
